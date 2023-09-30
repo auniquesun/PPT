@@ -1,0 +1,4 @@
+NAME: ModelNet
+DATA_PATH: data/modelnet10_normal_resampled
+NUM_CATEGORY: 10
+USE_NORMALS: FALSE

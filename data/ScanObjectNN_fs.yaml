@@ -1,0 +1,4 @@
+NAME: ScanObjectNN_fs
+DATA_PATH: data/scanobjectnn
+NUM_CATEGORY: 15
+USE_NORMALS: FALSE

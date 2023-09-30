@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
+# *.so  # notebook/render_balls.so
 
 # Distribution / packaging
 .Python

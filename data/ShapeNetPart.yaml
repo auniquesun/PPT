@@ -1,0 +1,4 @@
+NAME: ShapeNetPart
+DATA_PATH: data/shapenetpart
+class_choice: ['Airplane', 'Bag', 'Cap', 'Car', 'Chair', 'Earphone', 'Guitar', 'Knife', 'Lamp', 'Laptop', 'Motorbike', 'Mug', 'Pistol', 'Rocket', 'Skateboard', 'Table']
+normal_channel: False

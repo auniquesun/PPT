@@ -1,0 +1,50 @@
+{
+    "shapenet": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ShapeNet-55.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "train"
+    },
+    "modelnet40": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ModelNet40.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "scanobjectnn": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ScanObjectNN.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "shapenetpart": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ShapeNetPart.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "modelnet40_fs": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ModelNet40_fs.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "scanobjectnn_fs": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ScanObjectNN_fs.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "modelnet10": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ModelNet10.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "modelnet10_fs": {
+        "config": "/mnt/sdb/public/data/jerry/iGitRepo/PPT/data/ModelNet10_fs.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    }
+}
