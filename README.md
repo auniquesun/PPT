@@ -71,33 +71,33 @@ If you do not have Docker installed on your computer before, referring to the [o
 4. In PPT, only the PromptLearner and PointAdapter modules are learnable. Here we release the well-trained [weights](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) of these two modules and corresponding running [logs]( https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx). 
   - NOTE: SONN is short for ScanObjectNN
 
-  |   Task    | Model | Config | Dataset | 
-  | :--- | :---: | :---: | :---: |
-  | **Recognition** | PPT-Base | [recog_mn40](scripts/recog/cls-pointbert-mn40-32v-middle-dr04-h0-1.sh) | ModelNet40 |
-  | **Recognition** | PPT-Base | [recog_sonn_obj](scripts/recog/cls-pointbert-sonn_objonly-32v-front-dr07-h0-1.sh) | SONN_OBJ |
-  | **Recognition** | PPT-Base | [recog_sonn_bg](scripts/recog/cls-pointbert-sonn_objbg-32v-middle-dr06-h0-1.sh) | SONN_BG |
-  | **Recognition** | PPT-Base | [recog_sonn_pb](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-dr07-h0-1.sh) | SONN_PB |
-  | **Recognition** | PPT-FFN | [recog_mn40](scripts/recog/cls-pointbert-mn40-32v-middle-mlp_head-1.sh) | ModelNet40 |
-  | **Recognition** | PPT-FFN | [recog_sonn_obj](scripts/recog/cls-pointbert-sonn_objonly-32v-middle-mlp_head-1.sh) | SONN_OBJ |
-  | **Recognition** | PPT-FFN | [recog_sonn_bg](scripts/recog/cls-pointbert-sonn_objbg-32v-middle-mlp_head-1.sh) | SONN_BG |
-  | **Recognition** | PPT-FFN | [recog_sonn_pb](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-mlp_head-1.sh) | SONN_PB |
-  | **Recognition** | PPT-PTB | [recog_mn40](scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh) | ModelNet40 |
-  | **Recognition** | PPT-PTB | [recog_sonn_obj](scripts/recog/cls-pointbert-sonn_objonly-32v-front-dr07-h3-1.sh) | SONN_OBJ |
-  | **Recognition** | PPT-PTB | [recog_sonn_bg](scripts/recog/cls-pointbert-sonn_objbg-32v-middle-dr09-h3-1.sh) | SONN_BG |
-  | **Recognition** | PPT-PTB | [recog_sonn_hardest](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-dr05-h3-1.sh) | SONN_PB |
-  | **Few-shot** | PPT-FFN |  [1-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-1s-3.sh) | ModelNet40 |
-  | **Few-shot** | PPT-FFN |  [2-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-2s-1.sh) | ModelNet40 |
-  | **Few-shot** | PPT-FFN |  [4-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-4s-1.sh) | ModelNet40 |
-  | **Few-shot** | PPT-FFN |  [8-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-8s-1.sh) | ModelNet40 |
-  | **Few-shot** | PPT-FFN |  [16-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-16s-4.sh) | ModelNet40 |
-  | **Few-shot** | PPT-FFN |  [1-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-1s-1.sh) | SONN_PB |
-  | **Few-shot** | PPT-FFN |  [2-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-2s-1.sh) | SONN_PB |
-  | **Few-shot** | PPT-FFN |  [4-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-4s-1.sh) | SONN_PB |
-  | **Few-shot** | PPT-FFN |  [8-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-8s-1.sh) | SONN_PB |
-  | **Few-shot** | PPT-FFN |  [16-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-16s-1.sh) | SONN_PB |
-  | **PartSeg** | PPT | [partseg](scripts/partseg/partseg-pointbert-shapepart-32v-middle-2.sh) | ShapeNetPart |
-  | Linear Probe | ULIP | [lp-mn40](scripts/lin_probe/fs-mn40-pointbert-summary-1.sh) | ModelNet40 |
-  | Linear Probe | ULIP | [lp-sonn_pb](scripts/lin_probe/fs-sonn-pointbert-summary-1.sh) | SONN_PB |
+    |   Task    | Model | Config | Dataset | Download | 
+    | :--- | :---: | :---: | :---: | :---: |
+    | Recognition | PPT-Base | [recog_mn40](scripts/recog/cls-pointbert-mn40-32v-middle-dr04-h0-1.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-Base | [recog_sonn_obj](scripts/recog/cls-pointbert-sonn_objonly-32v-front-dr07-h0-1.sh) | SONN_OBJ | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-Base | [recog_sonn_bg](scripts/recog/cls-pointbert-sonn_objbg-32v-middle-dr06-h0-1.sh) | SONN_BG | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-Base | [recog_sonn_pb](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-dr07-h0-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-FFN | [recog_mn40](scripts/recog/cls-pointbert-mn40-32v-middle-mlp_head-1.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-FFN | [recog_sonn_obj](scripts/recog/cls-pointbert-sonn_objonly-32v-middle-mlp_head-1.sh) | SONN_OBJ | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-FFN | [recog_sonn_bg](scripts/recog/cls-pointbert-sonn_objbg-32v-middle-mlp_head-1.sh) | SONN_BG | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-FFN | [recog_sonn_pb](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-mlp_head-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-PTB | [recog_mn40](scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-PTB | [recog_sonn_obj](scripts/recog/cls-pointbert-sonn_objonly-32v-front-dr07-h3-1.sh) | SONN_OBJ | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-PTB | [recog_sonn_bg](scripts/recog/cls-pointbert-sonn_objbg-32v-middle-dr09-h3-1.sh) | SONN_BG | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-PTB | [recog_sonn_hardest](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-dr05-h3-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [1-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-1s-3.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [2-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-2s-1.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [4-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-4s-1.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [8-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-8s-1.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [16-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-16s-4.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [1-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-1s-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [2-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-2s-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [4-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-4s-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [8-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-8s-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Few-shot | PPT-FFN |  [16-shot](scripts/fewshot/pointbert-sonn_hardest-32v-middle-mlp_head-16s-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | PartSeg | PPT | [partseg](scripts/partseg/partseg-pointbert-shapepart-32v-middle-2.sh) | ShapeNetPart | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Linear Probe | ULIP | [lp-mn40](scripts/lin_probe/fs-mn40-pointbert-summary-1.sh) | ModelNet40 | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Linear Probe | ULIP | [lp-sonn_pb](scripts/lin_probe/fs-sonn-pointbert-summary-1.sh) | SONN_PB | [weights & logs, code: h3tx](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
 
 ## Usage
 The length of learnable contexts is 32 and PointBERT is the 3D encoder by default. We use `cls`, `fewshot` and `partseg` denotes the 3D recognition, few-shot learning and shape part segmentation task, respectively. 
