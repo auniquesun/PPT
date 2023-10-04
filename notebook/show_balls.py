@@ -205,12 +205,6 @@ def showpoints(xyz, c_gt=None, c_pred=None, waittime=0, showrot=False, magnifyBl
 
 
 def main(args):
-    '''
-    代码逻辑：
-        模型加载数据，前向传播，接收的都是tensor，这些tensor是放在batch里的，
-            但显示图像要一张张来，所以生成预测后再来个循环，遍历循环中每个实例
-    '''
-
     with open('../data/labels.json') as fin:
         labels = json.load(fin)
         args.classnames = labels[args.dataset_name]

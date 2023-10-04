@@ -1,4 +1,4 @@
-# 2023.08.25
+# 2023/09/30
 
 class=$1
 ballradius=13
@@ -12,7 +12,7 @@ context_len=32
 class_pos=middle
 
 dataset=shapenetpart
-npoints=2048    # 点数该选多少，vipformer 用了2048个点
+npoints=2048    # 2048 points for each point cloud
 
 batch_size=32
 output_dir=outputs
