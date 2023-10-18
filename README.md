@@ -109,6 +109,8 @@ For different tasks, you can refer to the `Config` and `Dataset` columns in the 
 ```shell
 ./scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh
 ```
+  - **NOTE**: You can use `--dataset_name` argument to change the dataset, `--data_ratio` to vary the proportion of used training set (0-100%), `--head_type` to specify the PPT model version (0: PPT-Base, 1: PPT-FFN, 2: PPT-PTB). 
+  - For more explanations of different arguments, please refer to `parser.py` and corresponding running script, e.g., [this script](scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh).
 
 ### Few-shot Classification
 1. To train and evaluate the few-shot learning on ScanObjectNN, run, e.g. 
