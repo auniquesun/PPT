@@ -111,7 +111,7 @@ For different tasks, you can refer to the `Config` and `Dataset` columns in the 
 ```
   - **NOTE**: For each script, you can use 
     - `--dataset_name` argument to change the dataset for experimenting
-    - `--data_ratio` to vary the proportion of used training set (0-100%) 
+    - `--data_ratio` to vary the proportion of used training set (0-1.0) 
     - `--head_type` to specify the PPT model version 
       - 0: PPT-Base
       - 1: PPT-FFN
