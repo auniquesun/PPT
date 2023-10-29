@@ -84,7 +84,7 @@ If you do not have Docker installed on your computer before, referring to the [o
     | Recognition | PPT-PTB | [recog_mn40](scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh) | ModelNet40 | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
     | Recognition | PPT-PTB | [recog_sonn_obj](scripts/recog/cls-pointbert-sonn_objonly-32v-front-dr07-h3-1.sh) | SONN_OBJ | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
     | Recognition | PPT-PTB | [recog_sonn_bg](scripts/recog/cls-pointbert-sonn_objbg-32v-middle-dr09-h3-1.sh) | SONN_BG | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
-    | Recognition | PPT-PTB | [recog_sonn_hardest](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-dr05-h3-1.sh) | SONN_PB | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
+    | Recognition | PPT-PTB | [recog_sonn_pb](scripts/recog/cls-pointbert-sonn_hardest-32v-middle-dr05-h3-1.sh) | SONN_PB | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
     | Few-shot | PPT-FFN |  [1-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-1s-3.sh) | ModelNet40 | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
     | Few-shot | PPT-FFN |  [2-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-2s-1.sh) | ModelNet40 | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
     | Few-shot | PPT-FFN |  [4-shot](scripts/fewshot/pointbert-mn40-32v-middle-mlp_head-4s-1.sh) | ModelNet40 | [weights & logs](https://pan.baidu.com/s/1BrjHvW57mG6izZ_-gV654A?pwd=h3tx) |
@@ -110,13 +110,13 @@ For different tasks, you can refer to the `Config` and `Dataset` columns in the 
 ./scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh
 ```
   - **NOTE**: For each script, you can use 
-    - `--dataset_name` argument to change the dataset for experimenting
-    - `--data_ratio` to vary the proportion of used training set (0-1.0) 
     - `--head_type` to specify the PPT model version 
       - 0: PPT-Base
       - 1: PPT-FFN
       - 2: PPT-PTB
-  - For more explanations of different arguments, please refer to [parser.py](parser.py) and corresponding running script, e.g., [current script](scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh).
+    - `--dataset_name` argument to change the dataset for training and test
+    - `--data_ratio` to vary the **proportion** of used training set and evaluate the **data efficiency**
+  - For more explanations of different arguments, please refer to [parser.py](parser.py) and corresponding running script, e.g., [the script](scripts/recog/cls-pointbert-mn40-32v-middle-dr03-h3-1.sh) for current experiment.
 
 ### Few-shot Classification
 1. To train and evaluate the few-shot learning on ScanObjectNN, run, e.g. 
@@ -133,9 +133,9 @@ For different tasks, you can refer to the `Config` and `Dataset` columns in the 
 ### Linear Probe
 1. To inspect the linear probe performances of ULIP on ModelNet40, run, e.g.
 ```shell
-./scripts/lin_probe/fs-mn40-train-feat-pointbert-1.sh # extract features for training set
-./scripts/lin_probe/fs-mn40-test-feat-pointbert-1.sh  # extract features for test set
-./scripts/lin_probe/fs-mn40-pointbert-summary-1.sh    # evaluate the performances of linear probe
+./scripts/lin_probe/fs-mn40-train-feat-pointbert-1.sh # extract features for the training set
+./scripts/lin_probe/fs-mn40-test-feat-pointbert-1.sh  # extract features for the test set
+./scripts/lin_probe/fs-mn40-pointbert-summary-1.sh    # train the linear probe model and evaluate its performances
 ```
 
 ## Citation
