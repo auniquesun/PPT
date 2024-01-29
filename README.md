@@ -143,7 +143,7 @@ For different tasks, you can refer to the `Config` and `Dataset` columns in the 
 @inproceedings{sun24ppt,
   title={Parameter-efficient Prompt Learning for 3D Point Cloud Understanding},
   author={Hongyu Sun, Yongcai Wang, Wang Chen, Haoran Deng and Deying Li},
-  booktitle={ICRA submission},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
   year={2024}
 }
 ```
