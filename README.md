@@ -140,12 +140,15 @@ For different tasks, you can refer to the `Config` and `Dataset` columns in the 
 
 ## Citation
 ```bibtex
-@inproceedings{sun24ppt,
-  title={Parameter-efficient Prompt Learning for 3D Point Cloud Understanding},
-  author={Hongyu Sun, Yongcai Wang, Wang Chen, Haoran Deng and Deying Li},
-  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
-  year={2024}
-}
+  @INPROCEEDINGS{sun24ppt3d,
+      author={Sun, Hongyu and Wang, Yongcai and Chen, Wang and Deng, Haoran and Li, Deying},
+      booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+      title={Parameter-efficient Prompt Learning for 3D Point Cloud Understanding},
+      year={2024},
+      pages={9478-9486},
+      keywords={Point cloud compression;Solid modeling;Adaptation models;Three-dimensional displays;Prompt engineering;Task analysis;Robotics and automation},
+      doi={10.1109/ICRA57147.2024.10610093}
+  }
 ```
 
 ## Acknowledgement
